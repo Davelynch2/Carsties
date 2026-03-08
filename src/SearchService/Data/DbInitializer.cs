@@ -1,6 +1,5 @@
 using MongoDB.Driver;
 using MongoDB.Entities;
-using System.Text.Json;
 
 namespace SearchService.Data
 {
@@ -31,7 +30,6 @@ namespace SearchService.Data
             {
                 await DB.SaveAsync(items);
             }
-
 		}
     }
 }
