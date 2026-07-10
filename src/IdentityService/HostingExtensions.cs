@@ -1,7 +1,7 @@
 using Duende.IdentityServer;
-using IndentityService.Data;
-using IndentityService.Models;
-using IndentityService.Services;
+using IdentityService.Data;
+using IdentityService.Models;
+using IdentityService.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -9,7 +9,7 @@ using Serilog;
 using Serilog.Filters;
 using System.Globalization;
 
-namespace IndentityService;
+namespace IdentityService;
 
 internal static class HostingExtensions
 {

@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
-namespace IndentityService.Pages.Account.Register
+namespace IdentityService.Pages.Account.Register
 {
 	public class RegisterViewModel
 	{

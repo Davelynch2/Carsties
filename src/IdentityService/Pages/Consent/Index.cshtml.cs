@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace IndentityService.Pages.Consent;
+namespace IdentityService.Pages.Consent;
 
 [Authorize]
 [SecurityHeaders]

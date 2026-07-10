@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace IndentityService.Data.Migrations
+namespace IdentityService.Data.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

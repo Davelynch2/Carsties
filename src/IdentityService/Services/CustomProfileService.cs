@@ -1,11 +1,11 @@
-﻿using Duende.IdentityModel;
+using Duende.IdentityModel;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
-using IndentityService.Models;
+using IdentityService.Models;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 
-namespace IndentityService.Services
+namespace IdentityService.Services
 {
 	public class CustomProfileService : IProfileService
 	{

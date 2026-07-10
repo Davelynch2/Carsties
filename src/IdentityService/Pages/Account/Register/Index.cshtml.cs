@@ -1,13 +1,13 @@
 using Duende.IdentityModel;
-using IndentityService.Models;
-using IndentityService.Pages.Account.Register;
+using IdentityService.Models;
+using IdentityService.Pages.Account.Register;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Security.Claims;
 
-namespace IndentityService.Pages.Register
+namespace IdentityService.Pages.Register
 {
     [SecurityHeaders]
     [AllowAnonymous]

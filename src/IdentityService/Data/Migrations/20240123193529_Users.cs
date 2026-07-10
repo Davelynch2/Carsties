@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace IndentityService.Data.Migrations;
+namespace IdentityService.Data.Migrations;
 
 /// <inheritdoc />
 public partial class Users : Migration

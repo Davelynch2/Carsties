@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace IndentityService.Pages.Ciba;
+namespace IdentityService.Pages.Ciba;
 
 [Authorize]
 [SecurityHeaders]

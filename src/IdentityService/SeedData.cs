@@ -1,12 +1,12 @@
 using System.Security.Claims;
 using Duende.IdentityModel;
-using IndentityService.Data;
-using IndentityService.Models;
+using IdentityService.Data;
+using IdentityService.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
-namespace IndentityService;
+namespace IdentityService;
 
 public class SeedData
 {

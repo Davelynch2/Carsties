@@ -1,4 +1,4 @@
-namespace IndentityService.Pages;
+namespace IdentityService.Pages;
 
 internal static class Log
 {

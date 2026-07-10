@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace IndentityService.Pages.Device;
+namespace IdentityService.Pages.Device;
 
 [SecurityHeaders]
 [Authorize]

@@ -3,7 +3,7 @@ using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authentication;
 
-namespace IndentityService.Pages.Diagnostics;
+namespace IdentityService.Pages.Diagnostics;
 
 public class ViewModel
 {

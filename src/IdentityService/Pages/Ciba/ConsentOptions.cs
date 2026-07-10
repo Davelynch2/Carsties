@@ -1,4 +1,4 @@
-namespace IndentityService.Pages.Ciba;
+namespace IdentityService.Pages.Ciba;
 
 public static class ConsentOptions
 {

@@ -1,4 +1,4 @@
-namespace IndentityService.Pages.Account.Logout;
+namespace IdentityService.Pages.Account.Logout;
 
 public class LoggedOutViewModel
 {

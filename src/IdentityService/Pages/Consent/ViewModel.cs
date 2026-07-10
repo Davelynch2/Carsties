@@ -1,4 +1,4 @@
-namespace IndentityService.Pages.Consent;
+namespace IdentityService.Pages.Consent;
 
 public class ViewModel
 {
