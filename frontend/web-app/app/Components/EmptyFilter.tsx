@@ -1,16 +1,23 @@
+'use client';
+
 import { useParamsStore } from "@/hooks/useParamsStore";
+import { signIn } from "next-auth/react";
 import Heading from "./Heading";
 
 type Props = {
     title?: string;
     subtitle?: string;
     showReset?: boolean;
+    showLogin?: boolean;
+    callbackUrl?: string;
 }
 
 export default function EmptyFilter({ 
      title = 'No matches for this filter',
      subtitle = 'Try changing the filter or search term',
-     showReset 
+     showReset,
+     showLogin,
+     callbackUrl
     }: Props) {
         const reset = useParamsStore(state => state.reset);
 
@@ -21,6 +28,12 @@ export default function EmptyFilter({
                     {showReset && (
                         <button onClick={reset}>
                             Remove filters
+                        </button>
+                    )}
+
+                    {showLogin && (
+                        <button onClick={() => signIn('id-server', {redirectTo : callbackUrl})}>
+                            Login
                         </button>
                     )}
                 </div>
