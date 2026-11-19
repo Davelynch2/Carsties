@@ -10,6 +10,7 @@ import Filters from "./Filters";
 import EmptyFilter from "../Components/EmptyFilter";
 import { useParamsStore } from "@/hooks/useParamsStore";
 import { useShallow } from "zustand/shallow";
+import { useAuctionStore } from "@/hooks/useAuctionStore";
 
 export default function Listings() {
     const [data, setData] = useState<PagedResult<Auction>>();
@@ -18,9 +19,12 @@ export default function Listings() {
         pageSize: state.pageSize,
         searchTerm: state.searchTerm,
         orderBy: state.orderBy,
-        filterBy: state.filterBy
+        filterBy: state.filterBy,
+        seller: state.seller,
+        winner: state.winner,
     })));
     const setParams = useParamsStore((state) => state.setParams);
+    const deletedIds = useAuctionStore((state) => state.deletedIds);
     const url = qs.stringifyUrl({url:'', query: params}, {skipEmptyString: true});
 
     function setPageNumber(pageNumber: number) {
@@ -35,15 +39,17 @@ export default function Listings() {
 
     if (!data) return <h3>Loading....</h3>
 
+    const auctions = data.results.filter(a => !deletedIds.includes(a.id));
+
     return (
         <>
         <Filters />
-        {data.totalCount === 0 ? (
+        {data.totalCount === 0 || auctions.length === 0 ? (
             <EmptyFilter showReset />
         ) : (
             <>
                 <div className="grid grid-cols-4 gap-6">
-                    {data && data.results.map((auction: Auction) => (
+                    {auctions.map((auction: Auction) => (
                         <AuctionCard key={auction.id} auction={auction} />
                     ))}
                 </div>
